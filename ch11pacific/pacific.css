@@ -311,6 +311,18 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     transition: transform 0.3s ease;
 }
 
+/* Hover Effect do on your own ch11 */
+.gallery-image:hover { 
+  transform: scale(1.05); /* slightly enlarge the container */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* deeper shadow */
+  transition: 2s ease-in-out; /* slow transition for a more dramatic effect */
+} 
+.gallery-image:hover img {
+  transform: scale(1.1); /* zoom image for subtle motion */
+  transition: 1s ease-in-out; /* slow transition for a more dramatic effect */
+}
+
+
 /*figcaption overlay ch11 */
 .gallery-image figcaption {
     position: absolute;
