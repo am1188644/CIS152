@@ -121,7 +121,7 @@ footer {
     color: #5c7fa3; /* c#1976d2 */
     font-weight: bold; /*fwb */
 }
-#homehero, #yurthero, #trailhero, #reservations-hero {
+#homehero, #yurthero, #trailhero, #reservations-hero, #abouthero {
     background-repeat: no-repeat; /* bgr:norepeat */
     background-size: cover; /* bgc:cover */
     height: 18.75rem; /* h:18.75rem */
@@ -131,6 +131,7 @@ footer {
 #yurthero { background-image: url(images/yurt.jpg); }
 #trailhero { background-image: url(images/trail.jpg); }
 #reservations-hero { background-image: url(images/reservations.jpg); }
+#abouthero { background-image: url(images/about-hero.jpg); }
 .card-row {
     display: flex;
     flex-direction: column; /* Default to stack */
@@ -260,13 +261,33 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     margin: 0; /* ch10 mid end*/
 }
 /* flex container for the main content row ch11*/
-.content-row {
+/* .content-row {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     align-items: flex-start;
     margin-bottom: 2em;
+} */
+
+/* flex container for the main content row ch11*/
+.content-row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2em;
+    align-items: flex-start;
+    margin-bottom: 2em;
 }
+/* text content styling ch11*/
+.about-content {
+    flex: 1;
+    /* min-width: 25px; */
+}
+
+.about-image {
+    flex 0 0 400px;
+    margin: 0;
+}
+
 
 /* video styling ch11*/
 .content-row video {
@@ -292,7 +313,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     margin: 2em 0;
 }
 
-/* Gallery image Container ch11 */
+/* Gallery image Container ch11 .... also added about page images to this */
 .gallery-image {
     position: relative;
     overflow: hidden;
